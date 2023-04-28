@@ -2,3 +2,5 @@ skip_list:
    - '301'
    - '201'  # Trailing whitespace
    - '403'  # Package installs should not use latest
+   - '303'  # Using command rather than module
+   - '306'  # Shells that use pipes should set the pipefail option
