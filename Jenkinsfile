@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        KEY_FILE = '/home/ubuntu/.ssh/citi-24th-apr.pem'
+        USER = 'ubuntu'
+    }
     stages {
         stage('Delete this workspace') {
             steps {
